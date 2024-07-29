@@ -91,7 +91,10 @@ INSERT INTO rentals (id_car, id_costumer, rental_start, rental_end, rental_value
 (5, 3, '2024-09-01', '2024-09-07', 800.00),
 (6, 3, '2024-09-10', '2024-09-15', 400.00),
 (7, 3, '2024-09-20', '2024-09-25', 420.00),
-(8, 3, '2024-10-01', '2024-10-05', 550.00);
+(8, 3, '2024-10-01', '2024-10-05', 550.00),
+
+(2, 4, '2024-03-18', '2024-02-05', 650.00),
+(3, 4, '2024-01-15', '2024-08-15', 300.00);
 
 SELECT costumers.costumer_name, SUM(rentals.rental_value) FROM costumers 
 INNER JOIN rentals ON costumers.id_costumer = rentals.id_costumer
