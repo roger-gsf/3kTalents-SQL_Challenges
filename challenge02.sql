@@ -6,26 +6,26 @@ USE challenge02;
 -- Create cars table
 CREATE TABLE IF NOT EXISTS cars (
     id_car INT AUTO_INCREMENT PRIMARY KEY,
-    car_brand VARCHAR(80) NOT NULL,
+    car_brand VARCHAR(50) NOT NULL,
     car_model VARCHAR(100) NOT NULL,
-    car_color VARCHAR(40) NOT NULL,
-    car_fuel DECIMAL(4,2) NOT NULL,
+    car_color VARCHAR(50) NOT NULL,
+    car_fuel VARCHAR(50) NOT NULL,
     car_year YEAR NOT NULL,
     car_price DECIMAL(8,2) NOT NULL
 );
 
 -- Insert data into cars
 INSERT INTO cars (car_brand, car_model, car_color, car_fuel, car_year, car_price) VALUES
-('Toyota', 'Corolla', 'Red', 7.5, 2020, 30000.00),
-('Honda', 'Civic', 'Blue', 8.0, 2019, 28000.00),
-('Ford', 'Mustang', 'Black', 12.0, 2018, 45000.00),
-('Chevrolet', 'Camaro', 'Yellow', 10.5, 2021, 50000.00),
-('Tesla', 'Model S', 'White', 0.0, 2022, 80000.00),
-('BMW', '3 Series', 'Gray', 9.5, 2020, 40000.00),
-('Audi', 'A4', 'Silver', 8.7, 2019, 42000.00),
-('Mercedes-Benz', 'C-Class', 'Black', 9.0, 2021, 55000.00),
-('Nissan', 'Altima', 'Blue', 7.8, 2020, 27000.00),
-('Hyundai', 'Elantra', 'Red', 7.6, 2018, 22000.00);
+('Toyota', 'Corolla', 'Red', 'Gasoline', 2020, 30000.00),
+('Honda', 'Civic', 'Blue', 'Disel', 2019, 28000.00),
+('Ford', 'Mustang', 'Black', 'Electric', 2018, 45000.00),
+('Chevrolet', 'Camaro', 'Yellow', 'Hybrid', 2021, 50000.00),
+('Tesla', 'Model S', 'White', 'Ethanol', 2022, 80000.00),
+('BMW', '3 Series', 'Gray', 'Biodiesel', 2020, 40000.00),
+('Audi', 'A4', 'Silver', 'Electric', 2019, 42000.00),
+('Mercedes-Benz', 'C-Class', 'Black', 'Gasoline', 2021, 55000.00),
+('Nissan', 'Altima', 'Blue', 'Hybrid', 2020, 27000.00),
+('Hyundai', 'Elantra', 'Red', 'Diesel', 2018, 22000.00);
 
 -- Create costumers table
 CREATE TABLE IF NOT EXISTS costumers (
